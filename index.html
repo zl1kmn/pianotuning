@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Armin Piano Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #f7f3ed;
+      color: #2e2e2e;
+    }
+    header {
+      background: #2b2119;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    img.full {
+      width: 100%;
+      border-radius: 6px;
+      margin: 1rem 0;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    .contact {
+      background: #e6dbcd;
+      padding: 2rem 1rem;
+      border-radius: 6px;
+      text-align: center;
+    }
+    .contact a {
+      color: #2b2119;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #777;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Armin Piano Services</h1>
+    <p>Fine Piano Tuning – Atiamuri, New Zealand</p>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>Hello! I'm Armin, a dedicated piano tuner based in Atiamuri. I help bring clarity and resonance back to pianos with expert tuning and care.</p>
+  </section>
+
+  <section>
+    <h2>Services</h2>
+    <ul>
+      <li>Standard tuning (A=440)</li>
+      <li>Pitch correction for very out-of-tune pianos</li>
+      <li>Minor repairs and adjustments</li>
+    </ul>
+    <img src="piano.jpg" alt="Piano tuning technician" class="full" />
+  </section>
+
+  <section>
+    <h2>Gallery</h2>
+    <img src="piano2.jpg" alt="Piano with sheet music" class="full" />
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <span id="email-link"></span></p>
+<script>
+  const user = "zl1kmn";
+  const domain = "xtra.co.nz";
+  const link = document.createElement("a");
+  link.href = "mailto:" + user + "@" + domain;
+  link.textContent = user + "@" + domain;
+  document.getElementById("email-link").appendChild(link);
+</script>
+    <p>Phone: <a href="tel:+6421470697">021 470 697</a></p>
+    <p>I’d love to hear from you and help restore your piano's voice.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Armin Piano Services – Atiamuri, New Zealand
+  </footer>
+
+</body>
+</html>
+
